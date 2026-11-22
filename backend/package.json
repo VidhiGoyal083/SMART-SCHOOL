@@ -1,0 +1,17 @@
+{
+  "name": "smart-school-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "REST API + SQLite database for the Smart School Parent-Teacher Interaction System",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "seed": "node src/seed.js --reset",
+    "test": "node test/smoke.js",
+    "logins": "node src/export-logins.js"
+  }
+}
